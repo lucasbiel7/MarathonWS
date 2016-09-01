@@ -1,0 +1,49 @@
+/*
+ * Empty Stylesheet file.
+ */
+*{
+    -my-green: rgb(0,144,62);
+    -my-yellow: rgb(253,193,0);
+    -my-blue: rgb(36,29,112);
+    -my-light-grey: rgb(235,235,235);
+    -my-mid-grey: rgb(180,180,180);
+    -my-dark-grey: rgb(80,80,80);
+}
+
+
+.mainFxmlClass {
+    -fx-background-color: white;
+}
+
+.label{
+    -fx-font-family:'Arial'; 
+}
+/*especificos*/
+.title{
+    -fx-alignment: CENTER;
+    -fx-font-size:20;
+    -fx-font-weight: bold;
+}
+.pane-title{
+    -fx-background-color: -my-blue;
+}
+.pane-title .label{
+    -fx-text-fill: white;
+}
+
+.title-dark-grey{
+    -fx-alignment: CENTER;
+    -fx-font-size:20;
+    -fx-font-weight: bold;
+    -fx-text-fill: -my-dark-grey;
+}
+
+.check-point{
+    -fx-cursor: hand;
+    -fx-fill: #ff9900;
+}
+
+.check-point-start{
+    -fx-cursor: hand;
+    -fx-fill: #2DDD1A;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/marathon?zeroDateTimeBehavior=convertToNull</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">OC2015</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="br.com.MarathonWS.model.entity.Charity"/>
+        <mapping class="br.com.MarathonWS.model.entity.Country"/>
+        <mapping class="br.com.MarathonWS.model.entity.Event"/>
+        <mapping class="br.com.MarathonWS.model.entity.EventType"/>
+        <mapping class="br.com.MarathonWS.model.entity.Gender"/>
+        <mapping class="br.com.MarathonWS.model.entity.Marathon"/>
+        <mapping class="br.com.MarathonWS.model.entity.RaceKitOption"/>
+        <mapping class="br.com.MarathonWS.model.entity.Registration"/>
+        <mapping class="br.com.MarathonWS.model.entity.RegistrationEvent"/>
+        <mapping class="br.com.MarathonWS.model.entity.RegistrationStatus"/>
+        <mapping class="br.com.MarathonWS.model.entity.Role"/>
+        <mapping class="br.com.MarathonWS.model.entity.Runner"/>
+        <mapping class="br.com.MarathonWS.model.entity.Sponsorship"/>
+        <mapping class="br.com.MarathonWS.model.entity.User"/>
+        <mapping class="br.com.MarathonWS.model.entity.Volunteer"/>
+        <mapping class="br.com.MarathonWS.model.entity.Position"/>
+        <mapping class="br.com.MarathonWS.model.entity.Staff"/>
+        <mapping class="br.com.MarathonWS.model.entity.Timesheet"/>
+        <mapping class="br.com.MarathonWS.model.entity.HowLong"/>
+        <mapping class="br.com.MarathonWS.model.entity.Checkpoint"/>
+    </session-factory>
+</hibernate-configuration>

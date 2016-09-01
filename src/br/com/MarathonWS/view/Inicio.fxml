@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.MarathonWS.view.InicioController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="7.0" prefHeight="92.0" prefWidth="600.0" styleClass="pane-title" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lbTexto" layoutX="197.0" layoutY="14.0" prefHeight="66.0" prefWidth="600.0" styleClass="title" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <VBox alignment="CENTER" layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#btWantRunnerActionEvent" prefHeight="200.0" prefWidth="300.0" text="I want to be a runner" />
+            <Button mnemonicParsing="false" onAction="#btWantSponsorActionEvent" prefHeight="200.0" prefWidth="300.0" text="I want to sponsor a runner" />
+            <Button mnemonicParsing="false" onAction="#btWantFindActionEvent" prefHeight="200.0" prefWidth="300.0" text="I Want to find out more" />
+         </children>
+      </VBox>
+      <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#btLoginActionEvent" text="Login" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="15.0" />
+   </children>
+</AnchorPane>

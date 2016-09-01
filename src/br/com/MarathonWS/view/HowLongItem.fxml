@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="68.0" prefWidth="352.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.MarathonWS.view.HowLongItemController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="92.0" layoutX="3.0" stroke="BLACK" strokeType="INSIDE" width="83.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="2.0" />
+      <ImageView fx:id="ivFoto" fitHeight="92.0" fitWidth="83.0" layoutX="2.0" layoutY="-2.0" pickOnBounds="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="2.0" />
+      <Label fx:id="lbNomeItem" layoutX="95.0" layoutY="14.0" prefHeight="67.0" prefWidth="253.0" />
+   </children>
+</AnchorPane>

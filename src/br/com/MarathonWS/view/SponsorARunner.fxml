@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import jidefx.scene.control.field.FormattedTextField?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.MarathonWS.view.SponsorARunnerController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="286.0" layoutY="22.0" styleClass="title" text="Sponsor a runner" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Label alignment="CENTER" layoutX="286.0" layoutY="75.0" text="Please choose the runner you would like to sponsor and the amount you would like&#10;to sponsor them for. Thank you for your support of the runners and their charities!" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <HBox alignment="CENTER" layoutX="28.0" layoutY="123.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <Label layoutX="80.0" styleClass="title" text="Sponsorship details" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <GridPane hgap="5.0" layoutY="39.0" prefHeight="180.0" prefWidth="292.0" vgap="5.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="134.0" minWidth="10.0" prefWidth="86.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="194.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Your Name:" />
+                        <Label text="Runner:" GridPane.rowIndex="1" />
+                        <Label text="Name on Card:" GridPane.rowIndex="2" />
+                        <Label text="Credit Card #:" GridPane.rowIndex="3" />
+                        <Label text="Expiry Date:" GridPane.rowIndex="4" />
+                        <Label text="CVC:" GridPane.rowIndex="5" />
+                        <TextField fx:id="tfName" promptText="Your name" GridPane.columnIndex="1" />
+                        <ComboBox fx:id="cbRegistrationEvent" onAction="#cbRunnerActionEvent" prefHeight="25.0" prefWidth="203.0" promptText="Choice runner" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="tfNameOfCard" promptText="Credit card holder" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <FormattedTextField fx:id="ftfNumberOfCard" promptText="1234 1234 1234 1234" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <FormattedTextField fx:id="ftfMonth" prefHeight="25.0" prefWidth="56.0" promptText="01" />
+                              <FormattedTextField fx:id="ftfYear" promptText="2017" />
+                           </children>
+                        </HBox>
+                        <FormattedTextField fx:id="ftfCVC" promptText="123" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="238.0" prefWidth="226.0">
+               <children>
+                  <Label layoutY="3.0" styleClass="title" text="Charity" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Label fx:id="lbCharity" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="11.0" layoutY="46.0" onMouseReleased="#ivInfoMouseReleased" prefHeight="25.0" prefWidth="151.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" onMouseReleased="#ivInfoMouseReleased" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/info.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label layoutX="65.0" layoutY="99.0" styleClass="title" text="Amount to donate" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Label fx:id="lbAmount" layoutX="25.0" layoutY="129.0" styleClass="title" text="\$0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <HBox alignment="CENTER" layoutX="4.0" layoutY="161.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#btRemoverActionEvent" text="-" />
+                        <FormattedTextField fx:id="ftfAmount" alignment="CENTER" onKeyReleased="#tfAmountKeyRelease" text="0" />
+                        <Button mnemonicParsing="false" onAction="#btAdicionarActionEvent" text="+" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Button layoutX="450.0" layoutY="360.0" mnemonicParsing="false" onAction="#btPayNowActionEvent" text="Pay now" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="89.0" />
+      <Button layoutX="518.0" layoutY="360.0" mnemonicParsing="false" onAction="#btCancelActionEvent" text="Cancel" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="533.0" prefWidth="774.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="br.com.MarathonWS.view.InteractiveMapController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="286.0" layoutY="14.0" styleClass="title-dark-grey" text="Interactive map for Marathon Skills 2015" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <ImageView fx:id="ivMap" fitHeight="478.0" fitWidth="650.0" layoutX="15.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/aboutMarathon/marathon-skills-2015-marathon-map.jpg" />
+         </image>
+      </ImageView>
+      <Circle fx:id="ciStart" fill="#2ddd1a" layoutX="310.0" layoutY="73.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" styleClass="check-point-start" />
+      <Circle fx:id="ciMid" fill="#2ddd1a" layoutX="211.0" layoutY="499.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" styleClass="check-point-start" />
+      <Circle fx:id="ciLast" fill="#2ddd1a" layoutX="119.0" layoutY="229.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" styleClass="check-point-start" />
+      <Circle fx:id="ci1" fill="#2ddd1a" layoutX="398.0" layoutY="139.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" styleClass="check-point" />
+      <Circle fx:id="ci2" fill="#2ddd1a" layoutX="461.0" layoutY="300.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" styleClass="check-point" />
+      <Circle fx:id="ci3" fill="#2ddd1a" layoutX="409.0" layoutY="390.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" styleClass="check-point" />
+      <Circle fx:id="ci4" fill="#2ddd1a" layoutX="321.0" layoutY="499.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" styleClass="check-point" />
+      <Circle fx:id="ci5" fill="#2ddd1a" layoutX="233.0" layoutY="424.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" styleClass="check-point" />
+      <Circle fx:id="ci7" fill="#2ddd1a" layoutX="119.0" layoutY="267.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" styleClass="check-point" />
+      <Circle fx:id="ci6" fill="#2ddd1a" layoutX="119.0" layoutY="401.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" styleClass="check-point" />
+      <Circle fx:id="ci8" fill="#2ddd1a" layoutX="119.0" layoutY="128.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" styleClass="check-point" />
+      <Label layoutX="302.0" layoutY="68.0" style="-fx-font-size: 8;" text="Start" />
+      <Label layoutX="111.0" layoutY="224.0" style="-fx-font-size: 8;" text="Start" />
+      <Label layoutX="203.0" layoutY="494.0" style="-fx-font-size: 8;" text="Start" />
+      <Label layoutX="396.0" layoutY="134.0" style="-fx-font-size: 8;" text="1" />
+      <Label layoutX="459.0" layoutY="295.0" style="-fx-font-size: 8;" text="2" />
+      <Label layoutX="407.0" layoutY="385.0" style="-fx-font-size: 8;" text="3" />
+      <Label layoutX="319.0" layoutY="494.0" style="-fx-font-size: 8;" text="4" />
+      <Label layoutX="231.0" layoutY="419.0" style="-fx-font-size: 8;" text="5" />
+      <Label layoutX="117.0" layoutY="396.0" style="-fx-font-size: 8;" text="6" />
+      <Label layoutX="117.0" layoutY="262.0" style="-fx-font-size: 8;" text="7" />
+      <Label layoutX="117.0" layoutY="123.0" style="-fx-font-size: 8;" text="8" />
+   </children>
+</AnchorPane>

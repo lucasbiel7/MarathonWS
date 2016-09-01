@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="400.0" prefWidth="233.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="br.com.MarathonWS.view.ViewCheckPointController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="lbTitle" layoutX="14.0" layoutY="5.0" prefHeight="44.0" prefWidth="197.0" styleClass="title-dark-grey" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <Label fx:id="lbDescricao" alignment="TOP_LEFT" layoutX="5.0" layoutY="88.0" prefHeight="75.0" prefWidth="197.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="4.0" layoutY="108.0" prefHeight="151.0" prefWidth="197.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <content>
+            <VBox fx:id="vbService" prefHeight="200.0" prefWidth="100.0" spacing="5.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="lbTitleService" layoutX="5.0" layoutY="213.0" styleClass="title-dark-grey" AnchorPane.bottomAnchor="164.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <Label fx:id="lbLandmark" layoutX="14.0" layoutY="57.0" styleClass="title-dark-grey" />
+   </children>
+</AnchorPane>

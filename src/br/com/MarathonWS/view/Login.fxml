@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.MarathonWS.view.LoginController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="286.0" layoutY="35.0" style="-fx-text-fill: -my-dark-grey;" styleClass="title" text="Login form" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <Label alignment="CENTER" layoutX="286.0" layoutY="84.0" text="Please log in to the system using your email address and password." AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="167.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <AnchorPane prefHeight="265.0" prefWidth="340.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="5.0" text="Email:" />
+                  <Label layoutY="46.0" text="Password:" />
+                  <TextField fx:id="tfEmail" layoutX="69.0" prefHeight="25.0" prefWidth="266.0" promptText="Enter your email address" />
+                  <PasswordField fx:id="pfSenha" layoutX="69.0" layoutY="41.0" prefHeight="25.0" prefWidth="266.0" promptText="Enter your password" />
+                  <Button defaultButton="true" layoutX="71.0" layoutY="92.0" mnemonicParsing="false" onAction="#btLoginActionEvent" prefHeight="25.0" prefWidth="77.0" text="Login" />
+                  <Button cancelButton="true" layoutX="161.0" layoutY="92.0" mnemonicParsing="false" onAction="#btCancelActionEvent" prefHeight="25.0" prefWidth="77.0" text="Cancel" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

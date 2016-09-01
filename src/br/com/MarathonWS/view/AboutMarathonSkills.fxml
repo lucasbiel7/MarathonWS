@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="528.0" prefWidth="615.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="br.com.MarathonWS.view.AboutMarathonSkillsController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="286.0" layoutY="14.0" styleClass="title-dark-grey" text="About marathon skills 2015" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <ImageView fitHeight="263.0" fitWidth="251.0" layoutX="14.0" layoutY="49.0" onMouseReleased="#ivMapMouseReleased" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/aboutMarathon/marathon-skills-2015-marathon-map.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="107.0" layoutX="174.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/aboutMarathon/banco-banespa.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="119.0" layoutX="147.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/aboutMarathon/ibirapuera-park-lake.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="119.0" layoutX="14.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/aboutMarathon/marathon-image.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="122.0" fitWidth="150.0" layoutX="14.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/aboutMarathon/teatro-municipal.jpg" />
+         </image>
+      </ImageView>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="274.0" layoutY="60.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="274.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="60.0">
+         <content>
+            <TextFlow prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Marathon Skills is a running festival held every year in a different part of the world. There can be three events: a Full Marathon, Half Marathon and a Fun Run - so the festival caters to all abilities and experience.&#10;&#10;In past years, marathons have been held in Osaka, Japan (2014); Leipzig, Germany (2013); Hanoi, Vietnam (2012) and York, England (2011).&#10;&#10;This year, Marathon Skills is very excited to be partnering with São Paulo, Brazil to put on the biggest running festival yet. Brazil's financial centre and the biggest city in South America, São Paulo will be on display to the thousands of runners who will weave their way past skyscrapers, green parks and magnificent architecture.&#10;&#10;This festival has attracted a record number of runners from all over the world. Attention will be on the contingents from Kenya and Jamaica as we hope to see Dawit Admasu's 2014 São Silvestre time broken. (The Ethiopian completed the race in 45 minutes 4 seconds.)&#10;&#10;The carnival atmosphere promises entertainment for all spectators as well as a party to round off the festivities in Ibirapuera Park.&#10;&#10;The events:&#10;&#10;- The &quot;Samba&quot; Full Marathon will start at Rua dos Americanos at 6am on 5 September 2015.&#10;&#10;- The &quot;Jongo&quot; Half Marathon will start at 7am on 6 September 2015. Runners will depart from near the intersection of Rua Ciniciata Braga and Avenida Brigadeiro Luís Antõnio.&#10;&#10;- The &quot;Capoeira&quot; 5km Fun Run will start at 3 pm on 6 September 2015. Our fun runners will start from the UNINOVE Memorial.&#10;&#10;Thank you to all the volunteers who will be helping!" />
+               </children>
+            </TextFlow>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

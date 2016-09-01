@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="562.0" prefWidth="735.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.MarathonWS.view.ManageARunnerController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="300.0" layoutY="14.0" styleClass="title-dark-grey" text="Manage a runner" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="60.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <GridPane hgap="5.0" prefHeight="323.0" prefWidth="375.0" vgap="5.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="182.0" minWidth="10.0" prefWidth="107.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.0" minWidth="10.0" prefWidth="268.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Email:" />
+                  <Label text="First Name:" GridPane.rowIndex="1" />
+                  <Label text="Last Name:" GridPane.rowIndex="2" />
+                  <Label text="Gender:" GridPane.rowIndex="3" />
+                  <Label text="Date of Birth:" GridPane.rowIndex="4" />
+                  <Label text="Country:" GridPane.rowIndex="5" />
+                  <Label text="Charity:" GridPane.rowIndex="6" />
+                  <Label text="Target to Raise:" GridPane.rowIndex="7" />
+                  <Label text="Race Kit Option:" GridPane.rowIndex="8" />
+                  <Label text="Race Events:" GridPane.rowIndex="9" />
+                  <Label fx:id="lbEmail" style="-fx-text-fill: -my-mid-grey;" GridPane.columnIndex="1" />
+                  <Label fx:id="lbFirstName" style="-fx-text-fill: -my-mid-grey;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="lbLastName" style="-fx-text-fill: -my-mid-grey;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="lbGender" style="-fx-text-fill: -my-mid-grey;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="lbDateOfBirth" style="-fx-text-fill: -my-mid-grey;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="lbCountry" style="-fx-text-fill: -my-mid-grey;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="lbCharity" style="-fx-text-fill: -my-mid-grey;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label fx:id="lbTargetToRaise" style="-fx-text-fill: -my-mid-grey;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label fx:id="lbRaceKitOption" style="-fx-text-fill: -my-mid-grey;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label fx:id="lbRaceEvent" style="-fx-text-fill: -my-mid-grey;" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+               </children>
+            </GridPane>
+            <AnchorPane prefHeight="495.0" prefWidth="238.0">
+               <children>
+                  <Label styleClass="title-dark-grey" text="Registration Status" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Separator layoutX="167.0" layoutY="48.0" orientation="VERTICAL" prefHeight="320.0" prefWidth="2.0" />
+                  <Label layoutX="65.0" layoutY="77.0" text="Registered" />
+                  <Label layoutX="20.0" layoutY="152.0" text="Payment Confirmed" />
+                  <Label layoutX="50.0" layoutY="229.0" text="Race Kit Sent" />
+                  <Label layoutX="34.0" layoutY="311.0" text="Race Attended" />
+                  <ImageView fx:id="ivRegistered" fitHeight="38.0" fitWidth="42.0" layoutX="148.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/fail.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ivPaymentConfirmed" fitHeight="38.0" fitWidth="42.0" layoutX="148.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/fail.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ivRaceKitSent" fitHeight="38.0" fitWidth="42.0" layoutX="148.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/fail.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ivRaceAttended" fitHeight="38.0" fitWidth="42.0" layoutX="148.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/fail.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Button layoutX="554.0" layoutY="506.0" mnemonicParsing="false" onAction="#btPreviewCertificateActionEvent" text="Preview&#10;certificate" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="85.0" />
+      <Button layoutX="632.0" layoutY="506.0" mnemonicParsing="false" onAction="#btEditProfileActionEvent" prefHeight="42.0" prefWidth="74.0" text="Edit profile" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+   </children>
+</AnchorPane>

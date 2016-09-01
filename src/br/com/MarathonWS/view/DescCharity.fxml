@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="400.0" prefWidth="447.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="br.com.MarathonWS.view.DescCharityController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="lbTitulo" layoutX="300.0" layoutY="21.0" prefHeight="90.0" prefWidth="600.0" styleClass="title" text="Label" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Circle fx:id="cFoto" fill="#1f93ff00" layoutX="224.0" layoutY="140.0" radius="50.0" stroke="#d3c2c2" strokeType="INSIDE" />
+      <TextFlow layoutX="14.0" layoutY="243.0" prefHeight="183.0" prefWidth="570.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <children>
+            <Text fx:id="tDescricao" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </TextFlow>
+   </children>
+</AnchorPane>

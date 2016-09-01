@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="540.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="br.com.MarathonWS.view.HowLongMarathonController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="249.0" layoutY="23.0" styleClass="title-dark-grey" text="How long is a marathon?" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <Label fx:id="lbTitle" layoutX="9.0" layoutY="87.0" prefHeight="44.0" prefWidth="353.0" styleClass="title-dark-grey" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="263.0" layoutX="27.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="394.0" />
+      <ImageView fx:id="ivFoto" fitHeight="256.0" fitWidth="388.0" layoutX="29.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lbDescricao" alignment="TOP_CENTER" layoutX="13.0" layoutY="404.0" prefHeight="126.0" prefWidth="423.0" textAlignment="CENTER" />
+      <TabPane layoutX="446.0" layoutY="62.0" prefHeight="377.0" prefWidth="139.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="446.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="62.0">
+        <tabs>
+          <Tab text="Speed">
+               <content>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <VBox fx:id="vbSpeed" prefHeight="200.0" prefWidth="100.0" />
+                     </content>
+                  </ScrollPane>
+               </content>
+          </Tab>
+          <Tab text="Distance">
+               <content>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <VBox fx:id="vbDistance" prefHeight="200.0" prefWidth="100.0" />
+                     </content>
+                  </ScrollPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

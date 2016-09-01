@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.MarathonWS.view.PrincipalController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="7.0" prefHeight="86.0" prefWidth="600.0" styleClass="pane-title" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btVoltar" cancelButton="true" layoutX="26.0" layoutY="10.0" mnemonicParsing="false" onAction="#btVoltarActionEvent" prefHeight="55.0" prefWidth="48.0" text="Back" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+            <Button fx:id="btLogout" layoutX="525.0" layoutY="21.0" mnemonicParsing="false" onAction="#btLogoutActionEvent" prefHeight="38.0" prefWidth="54.0" text="Logout" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+            <ImageView fitHeight="84.0" fitWidth="200.0" layoutX="48.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="55.0">
+               <image>
+                  <Image url="@image/logo-2015-for-dark-background.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="6.0" layoutY="290.0" prefHeight="55.0" prefWidth="600.0" styleClass="pane-title" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="lbTimeLeft" layoutX="70.0" layoutY="19.0" styleClass="title" text="Label" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children></AnchorPane>
+      <ScrollPane fx:id="spContainer" layoutX="14.0" layoutY="85.0" prefHeight="260.0" prefWidth="600.0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="85.0" />
+   </children>
+</AnchorPane>

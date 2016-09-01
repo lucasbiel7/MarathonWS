@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="276.0" prefWidth="397.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.MarathonWS.view.DescCaloriesBurnedController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="222.0" layoutY="14.0" styleClass="title-dark-grey" text="Activity levels" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <Label layoutX="15.0" layoutY="37.0" text="This would have description of each of the activity&#10;levels shown here.&#10;" />
+      <GridPane hgap="5.0" layoutX="146.0" layoutY="76.0" vgap="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="76.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="124.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0" prefWidth="268.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label style="-fx-font-weight: bold;" text="-Sedentary:" />
+            <Label style="-fx-font-weight: bold;" text="-Lightly Active:" GridPane.rowIndex="1" />
+            <Label style="-fx-font-weight: bold;" text="-Moderately Active:" GridPane.rowIndex="2" />
+            <Label style="-fx-font-weight: bold;" text="-Very Active:" GridPane.rowIndex="3" />
+            <Label style="-fx-font-weight: bold;" text="-Extremely Active:" GridPane.rowIndex="4" />
+            <Label text="Light or no exercise and desk job" GridPane.columnIndex="1" />
+            <Label text="Light exercise or sports 1-3 days a week" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Moderate exercise or sports 3-5 days a week" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Hard exercise or sports 6-7 days a week" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Hard daily exercise or sport and physical job" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
